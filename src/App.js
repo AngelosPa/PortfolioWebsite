@@ -6,9 +6,25 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Aboutme from "./components/Aboutme";
 import Getintouch from "./components/Getintouch";
 import Mywork from "./components/Mywork";
+import Stars from "./components/Stars";
 import "./scss/Main.scss";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
+  if (loading)
+    return (
+      <Router>
+        <Route path="/PortfolioWebsite">
+          <Stars />
+        </Route>
+      </Router>
+    );
   return (
     <Router>
       <div className="body-container">

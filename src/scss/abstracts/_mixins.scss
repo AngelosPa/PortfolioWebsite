@@ -5,3 +5,51 @@
   justify-content: center;
   align-items: center;
 }
+@mixin sterne {
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
+  position: absolute;
+  border-radius: ((random(50) + 100 + px)) ((random(20) + 100 + px)) 0 0;
+  border-radius: 50%;
+
+  box-shadow: 0 0 6px 2px rgb(16, 2, 98),
+    -4px -0px 20px -1px rgba(255, 255, 255, 0.431);
+}
+@mixin add-move-animation($duration) {
+  animation-name: move;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(00deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes light {
+  0% {
+    box-shadow: 0 0 40px 2px rgb(73, 3, 3),
+      -4px -0px 20px -100px rgba(202, 178, 39, 0.678);
+  }
+  50% {
+    box-shadow: 0 0 40px 2px rgb(226, 226, 226),
+      -4px -0px 20px -100px rgba(190, 32, 32, 0.822);
+    box-shadow: 0 0 40px 20px rgb(151, 7, 7),
+      -4px -0px 40px -100px rgba(255, 231, 124, 0.431);
+
+    transform: scale(1.1);
+  }
+
+  100% {
+    box-shadow: 0 0 60px 2px rgb(255, 255, 255),
+      -4px -0px 20px -1px rgba(255, 231, 124, 0.431);
+
+    transform: scale(0.01);
+  }
+}

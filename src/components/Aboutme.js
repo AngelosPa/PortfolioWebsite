@@ -38,7 +38,6 @@ function Aboutme() {
           developing unique, dynamic user experiences as well digital drawing
           and 3d effects.
         </p>
-        <h2> Technologies :</h2>{" "}
       </div>
       {/*  style={{ transform: `translateY(-${scroller * 0.5}px)` }} */}
       <div>
