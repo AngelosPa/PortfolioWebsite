@@ -17,7 +17,7 @@ function Aboutme() {
     //we need to stop it when the component gets unmounted otherwise we left this listener active and slow down our things
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  console.log(scroller);
+  //console.log(scroller);
   //we initialise Aos by using our useEffect hook
   useEffect(() => {
     AOS.init({});
@@ -40,8 +40,9 @@ function Aboutme() {
         </p>
         <h2> Technologies :</h2>{" "}
       </div>
-      <div style={{ transform: `translateY(-${scroller * 0.5}px)` }}>
-        <Techno />
+      {/*  style={{ transform: `translateY(-${scroller * 0.5}px)` }} */}
+      <div>
+        <Techno scroller={scroller} />
       </div>
     </div>
   );

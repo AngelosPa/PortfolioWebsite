@@ -23,7 +23,29 @@ p,
 span {
   color: white;
 }
-footer {
-  background-color: yellowgreen;
-  width: 100%;
+
+.technologies {
+  .main-treppebox {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    align-self: flex-start;
+    flex-direction: column;
+    flex-flow: wrap;
+    flex-wrap: nowrap;
+    height: 10%;
+    width: 100%;
+    border: 2px red dashed;
+    transform: rotate(-0deg);
+  }
+
+  // transform: skew(10deg, 40deg);
+  // transform: skew(0deg, 0deg);
+  a {
+    border: 2px red dashed;
+
+    transform: rotate(0deg);
+
+    overflow: visible;
+  }
 }
