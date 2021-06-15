@@ -1,1 +1,29 @@
 //Import Component files
+h1 {
+  color: rgba(255, 255, 255, 0.548);
+  font-family: "Big Shoulders Stencil Text", cursive;
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.596), 0 0 3px #fff,
+    0 0 5px rgba(255, 255, 255, 0.52), 0 0 2px #49ff18, 0 0 3px #49ff18,
+    0 0 40px #4aff187e;
+  font-weight: lighter;
+}
+body {
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span {
+  color: white;
+}
+footer {
+  background-color: yellowgreen;
+  width: 100%;
+}
