@@ -75,9 +75,10 @@
 
     .technologies {
       text-align: center;
+
       width: 90vw;
       height: 100vh;
-      border: 1px #4aff184f solid;
+      border: 1px #4aff1823 solid;
       border-radius: 5%;
     }
   }
@@ -89,7 +90,18 @@ footer {
   height: 3rem;
   background: linear-gradient(#000000, #399c3977);
 }
-
+//for the my work component link
+.parent-div-for-technologies-and-menu {
+  @include flexthing;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: auto;
+}
 //mobile
 @media only screen and (max-width: 500px) {
   img {
@@ -99,4 +111,18 @@ footer {
   h1 {
     text-align: center;
   }
+  nav {
+    width: 100%;
+    height: auto;
+    li {
+      font-size: 15px;
+      padding: 1.2rem;
+    }
+  }
+}
+.mywork-container {
+  width: 90vw;
+  height: 80vh;
+  border: 2px red dashed;
+  color: white;
 }

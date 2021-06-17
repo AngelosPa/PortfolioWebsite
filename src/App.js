@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //switch to looks through its children <Route>s and renders the first one that matches the current URL. ad lets go
 
 import Aboutme from "./components/Aboutme";
-import Getintouch from "./components/Getintouch";
+
+//import Getintouch from "./components/Getintouch";
 import Mywork from "./components/Mywork";
 import Stars from "./components/Stars";
 import "./scss/Main.scss";
@@ -38,9 +39,9 @@ function App() {
           <Route path="/mywork" exact>
             <Mywork />
           </Route>
-          <Route path="/getintouch" exact>
+          {/* <Route path="/getintouch" exact>
             <Getintouch />
-          </Route>
+          </Route> */}
           <Route path={() => "/main" || "/admin" || "/any-other-word"}>
             wrong way..
           </Route>

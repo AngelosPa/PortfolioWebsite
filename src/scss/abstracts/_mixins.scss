@@ -1,10 +1,23 @@
 // Mixins
-
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Goldman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Goldman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Goldman&family=Lexend&family=Raleway:wght@200&display=swap");
 @mixin flexthing {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+@mixin forfonts {
+  color: rgba(255, 255, 255, 0.548);
+  font-family: "Big Shoulders Stencil Text", cursive;
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.596), 0 0 3px #fff,
+    0 0 5px rgba(255, 255, 255, 0.52), 0 0 2px #49ff18, 0 0 3px #49ff18,
+    0 0 40px #4aff187e;
+  font-weight: lighter;
+}
+//mixin for the loading part
 @mixin sterne {
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
@@ -22,6 +35,7 @@
   animation-timing-function: ease-in-out;
 }
 
+//keyframes for the loading part
 @keyframes move {
   0% {
     transform: rotate(00deg);

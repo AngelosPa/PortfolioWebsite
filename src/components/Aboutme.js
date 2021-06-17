@@ -1,4 +1,5 @@
 import AOS from "aos";
+import Menu from "./Menu";
 import Techno from "./Techno";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import React, { useState, useEffect } from "react";
@@ -40,8 +41,9 @@ function Aboutme() {
         </p>
       </div>
       {/*  style={{ transform: `translateY(-${scroller * 0.5}px)` }} */}
-      <div>
+      <div className="parent-div-for-technologies-and-menu">
         <Techno scroller={scroller} />
+        <Menu scroller={scroller} />
       </div>
     </div>
   );
