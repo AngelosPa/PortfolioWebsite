@@ -1,4 +1,4 @@
-//Import Layout files
+//basic layout
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,11 +26,15 @@
     font-size: 25px;
   }
   //for the start loading part effect
+  .loading {
+    font-size: 10vw;
+    @include forfonts;
+  }
   .backroundi {
     @include flexthing;
     top: 1vh;
     position: absolute;
-    background-color: blue;
+
     width: 100vw;
     height: 90vh;
   }
@@ -39,30 +43,30 @@
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    height: 3rem;
-    width: 3rem;
+    height: 30px;
+    width: 30px;
     position: relative;
     background: linear-gradient(
       to left,
       rgba(255, 255, 255, 0.8),
-      #003366,
-      #000d1a,
-      #000d1a,
-      #000d1a,
+      #0c6600,
+      #033d0c,
+      #000c01,
+      #051a00,
       #000000c2
     );
-    @include add-move-animation(20s);
+    @include add-move-animation(1.3s);
   }
-  @for $i from 1 through 18 {
+  @for $i from 1 through 8 {
     .star:nth-child(#{$i}) {
-      @include add-move-animation(6s);
+      @include add-move-animation(8s);
       @include sterne();
 
-      width: 0.4rem;
-      height: 0.4rem;
+      width: 10px;
+      height: 10px;
 
-      left: 5 + 0.1 * ($i * $i) + rem;
-      top: -2$i * 0.2 + rem;
+      left: 1 + 1.3 * ($i) + rem;
+      top: -2$i + rem;
     }
   }
   //about me , in general context
@@ -107,7 +111,6 @@
     overflow: visible;
   }
 }
-//for the my work component link
 .parent-div-for-technologies-and-menu {
   @include flexthing;
   flex-direction: column;
@@ -120,12 +123,42 @@ nav {
   width: 80%;
   height: auto;
 }
+//for the mywork/ portfolio component link
+
 .mywork-container {
   width: 90vw;
   height: 80vh;
-  border: 2px red dashed;
+  background-color: rgba(11, 95, 11, 0.034);
   color: white;
-  @include flexthing;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  nav ul {
+    text-align: center;
+    display: flex;
+    width: 35vw;
+    height: 80vh;
+    flex-wrap: wrap;
+  }
+  .box-for-menu {
+    height: 100%;
+    @include flexthing;
+  }
+  .portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    height: 100%;
+    li {
+      width: 100%;
+      height: 27%;
+      font-size: 29px;
+
+      @include frame_for_list_items;
+    }
+  }
 }
 //for get in touch container
 .getintouch-container {
@@ -190,10 +223,42 @@ footer {
   background: linear-gradient(#000000, #399c3977);
 }
 //mobile
+@media only screen and (max-width: 882px) {
+  .technologies {
+    width: 100vw;
+    .main-treppebox {
+      img {
+        img {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+  nav {
+    position: relative;
+
+    .text-link:nth-child(1) {
+      bottom: -340px;
+      left: 30px;
+      position: absolute;
+    }
+    .text-link:nth-last-child(1) {
+      bottom: -340px;
+      left: 170px;
+      position: absolute;
+    }
+  }
+}
 @media only screen and (max-width: 500px) {
+  @for $i from 6 through 8 {
+    .star:nth-child(#{$i}) {
+      display: none;
+    }
+  }
   .main-treppebox {
     img {
-      margin: -3rem;
+      margin: -4rem;
     }
   }
   .getintouch-container {

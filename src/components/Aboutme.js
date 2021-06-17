@@ -3,6 +3,7 @@ import Menu from "./innercomponents/Menu";
 import Techno from "./innercomponents/Techno";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import React, { useState, useEffect } from "react";
+import userEvent from "@testing-library/user-event";
 // ..
 AOS.init();
 
@@ -11,13 +12,26 @@ function Aboutme() {
   // https://developer.mozilla.org/en-US/docs/Web/API/Window/pageYOffset
   const [scroller, setScroller] = useState(0);
   //window.pageYOffset returns the number of pixels the document is currently scrolled along the vertical(y) axis
-  const handleScroll = () => setScroller(window.pageYOffset);
-  //useeffect to initialize it as soon as the component mounts!!
+  const handleScroll = () => {
+    console.log(window.pageYOffset);
+    console.log(window.innerHeight);
+    //to stop scrolling
+    if (window.pageYOffset <= 440) {
+      setScroller(window.pageYOffset);
+    }
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    //we need to stop it when the component gets unmounted otherwise we left this listener active and slow down our things
-    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  //useeffect to initialize it as soon as the component mounts!!
+  useEffect(() => {
+    //we need to stop it when the component gets unmounted otherwise we left this listener active and slow down our things
+    if (window.pageYOffset >= window.innerHeight) {
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
+  }, [window.pageYOffset]);
   //console.log(scroller);
   //we initialise Aos by using our useEffect hook
   useEffect(() => {
@@ -27,7 +41,7 @@ function Aboutme() {
     <div
       className="about-me"
       // style={{ opacity: `${scroller * 2}%` }}
-      style={{ opacity: `${scroller * 2}%` }}
+      style={{ opacity: `${scroller / 3}%` }}
     >
       <div>
         <p>

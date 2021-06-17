@@ -10,21 +10,24 @@ import Stars from "./components/Stars";
 import "./scss/Main.scss";
 
 function App() {
-  //   const [loading, setLoading] = useState(true);
-  //   useEffect(() => {
-  //     setTimeout(() => {
-  //       setLoading(false);
-  //     }, 2000);
-  //   }, []);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
 
-  // if (loading)
-  //   return (
-  //     <Router>
-  //       <Route path="/PortfolioWebsite">
-  //         <Stars />
-  //       </Route>
-  //     </Router>
-  //   );
+  if (loading)
+    return (
+      <Router>
+        <Route path="/PortfolioWebsite">
+          <div className="body-container">
+            <p className="loading">Loading...</p>
+            <Stars />
+          </div>
+        </Route>
+      </Router>
+    );
   return (
     <Router>
       <div className="body-container">
