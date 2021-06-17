@@ -14,7 +14,7 @@ const Menu = (props) => {
       </Link>
       <Link
         className="text-link"
-        to="/PortfolioWebsite"
+        to="/getintouch"
         style={{ transform: `${mover}` }}
       >
         <li>Get in touch</li>

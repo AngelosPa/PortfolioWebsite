@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   font-size: 18px;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .body-container {
@@ -23,7 +25,7 @@
   h2 {
     font-size: 25px;
   }
-  //for the start effect
+  //for the start loading part effect
   .backroundi {
     @include flexthing;
     top: 1vh;
@@ -125,4 +127,21 @@ nav {
   height: 80vh;
   border: 2px red dashed;
   color: white;
+  @include flexthing;
+}
+.getintouch-container {
+  @include flexthing;
+  flex-direction: column;
+  width: 80vw;
+  height: 80vh;
+  border: 2px red dashed;
+  img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .mail-icon {
+    width: 70px;
+    height: 70px;
+  }
 }

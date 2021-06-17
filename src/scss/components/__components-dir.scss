@@ -28,7 +28,10 @@ span {
     flex-direction: column;
     flex-flow: wrap;
     flex-wrap: nowrap;
-
+    img {
+      width: 70px;
+      height: 70px;
+    }
     transform: rotate(-0deg);
   }
 
@@ -47,10 +50,63 @@ nav {
 
   li {
     font-size: 30px;
-    list-style-type: none;
-    text-decoration: none;
+
     padding: 1.2rem;
     border-radius: 100%;
     box-shadow: 0px 0px 18px 3px rgba(135, 243, 150, 0.198);
+  }
+}
+/* here is the green planet menu */
+.angelov2-menu {
+  margin-top: 2rem;
+  background-color: rgb(0, 0, 0);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0px -1px 5px 1px rgba(135, 243, 150, 0.63);
+  border-radius: 50%;
+}
+
+.orbit {
+  position: relative;
+  top: -0.1rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: rgba(143, 11, 11, 0);
+  /* i kept the backround color to check out my orbit */
+  border-radius: 100%;
+  animation: rotateit 2s linear;
+  animation-iteration-count: infinite;
+
+  padding: 2rem;
+}
+/* to give shape and life to my satelites */
+.orbit:hover:before,
+.orbit:hover:after {
+  position: absolute;
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 8px 2px rgb(135, 243, 150);
+  border-radius: 100%;
+}
+
+.orbit:before {
+  top: -0.25rem;
+  left: -0.25rem;
+}
+
+.orbit:after {
+  bottom: -0.25rem;
+  right: -0.25rem;
+}
+@keyframes rotateit {
+  to {
+    transform: rotate(360deg);
   }
 }
