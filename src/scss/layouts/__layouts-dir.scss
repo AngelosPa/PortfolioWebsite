@@ -85,13 +85,7 @@
     }
   }
 }
-//footer layout
-footer {
-  @include flexthing;
-  width: 100%;
-  height: 3rem;
-  background: linear-gradient(#000000, #399c3977);
-}
+
 //for the my work component link
 .parent-div-for-technologies-and-menu {
   @include flexthing;
@@ -104,9 +98,102 @@ nav {
   width: 80%;
   height: auto;
 }
+.mywork-container {
+  width: 90vw;
+  height: 80vh;
+  border: 2px red dashed;
+  color: white;
+  @include flexthing;
+}
+//for get in touch container
+.getintouch-container {
+  @include flexthing;
+
+  width: 80vw;
+  height: 80vh;
+
+  .links-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+
+    width: 30%;
+    height: 100%;
+    a {
+      @include flexthing;
+      @include forfonts;
+      display: flex;
+      justify-content: space-around;
+
+      width: 100%;
+      font-size: 2rem;
+    }
+
+    img {
+      padding: 12px;
+      background-color: rgb(0, 0, 0);
+      box-shadow: 0px 0px 6px 1px rgb(135, 243, 150);
+      border-radius: 100%;
+      width: 90px;
+      height: 90px;
+    }
+
+    .mail-icon {
+      padding: 12px;
+      border-radius: 100%;
+      background-color: rgb(0, 0, 0);
+      box-shadow: 0px 0px 6px 1px rgb(135, 243, 150);
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .form-container {
+    @include flexthing;
+
+    width: 70%;
+    height: 100%;
+  }
+}
+//footer layout
+footer {
+  @include flexthing;
+  width: 100%;
+  height: 3rem;
+  background: linear-gradient(#000000, #399c3977);
+}
 //mobile
 @media only screen and (max-width: 500px) {
+  .getintouch-container {
+    @include flexthing;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    .links-container {
+      @include flexthing;
+      flex-direction: column;
+      img,
+      .mail-icon {
+        padding: 0px;
+        width: 30px;
+        height: 30px;
+      }
+      width: 100%;
+      height: auto;
+      a {
+        font-size: 1rem;
+        justify-content: space-between;
+      }
+    }
+    .form-container {
+      @include flexthing;
+      flex-direction: row;
+      width: 100%;
+      height: auto;
+    }
+  }
   img {
+    padding: 0px;
     width: 30px;
     height: 30px;
   }
@@ -120,28 +207,5 @@ nav {
       font-size: 15px;
       padding: 1.2rem;
     }
-  }
-}
-.mywork-container {
-  width: 90vw;
-  height: 80vh;
-  border: 2px red dashed;
-  color: white;
-  @include flexthing;
-}
-.getintouch-container {
-  @include flexthing;
-  flex-direction: column;
-  width: 80vw;
-  height: 80vh;
-  border: 2px red dashed;
-  img {
-    width: 90px;
-    height: 90px;
-  }
-
-  .mail-icon {
-    width: 70px;
-    height: 70px;
   }
 }

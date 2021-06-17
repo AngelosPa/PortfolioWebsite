@@ -65,3 +65,9 @@
     transform: scale(0.01);
   }
 }
+//to rotate the planet menu
+@keyframes rotateit {
+  to {
+    transform: rotate(360deg);
+  }
+}

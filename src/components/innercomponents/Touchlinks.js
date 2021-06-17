@@ -34,7 +34,7 @@ function Touchlinks() {
               "
           alt="xingico"
         />
-        My profile on Xing
+        Xing Profile
       </a>
 
       <a href="mailto: mrpalaiologos@gmail.com">

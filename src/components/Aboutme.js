@@ -1,6 +1,6 @@
 import AOS from "aos";
-import Menu from "./Menu";
-import Techno from "./Techno";
+import Menu from "./innercomponents/Menu";
+import Techno from "./innercomponents/Techno";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import React, { useState, useEffect } from "react";
 // ..
