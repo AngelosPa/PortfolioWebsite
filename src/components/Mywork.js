@@ -5,13 +5,21 @@ function Mywork() {
         <nav>
           <ul>
             <li>
-              <a href="https://angelospa.github.io/toDoList-ReactVersion/">
-                TO-DO-LIST(React){" "}
+              <a
+                href="https://angelospa.github.io/toDoList-ReactVersion/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                TO-DO-LIST(React)
                 <p>simple to do list application using react</p>
               </a>
             </li>
             <li>
-              <a href="https://angelospa.github.io/find-the-flag/">
+              <a
+                href="https://angelospa.github.io/find-the-flag/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 FIND-THE-FLAG
                 <p>
                   a React application that shows information about countries
@@ -20,7 +28,11 @@ function Mywork() {
               </a>
             </li>
             <li>
-              <a href="https://angelospa.github.io/Instagram-Profilepageclone/">
+              <a
+                href="https://angelospa.github.io/Instagram-Profilepageclone/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 INSTAGRAM-PROFILEPAGE-CLONE
                 <p>
                   a Replica of an Instagram profile Page made by using pictures
@@ -41,13 +53,21 @@ function Mywork() {
         <nav>
           <ul>
             <li>
-              <a href="https://angelospa.github.io/TheRealToDoList/">
+              <a
+                href="https://angelospa.github.io/TheRealToDoList/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 TO-DO-LIST(DOM)
                 <p>a simple to do list application using js DOM manipulators</p>
               </a>
             </li>
             <li>
-              <a href="https://angelospa.github.io/youTube-clone/">
+              <a
+                href="https://angelospa.github.io/youTube-clone/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 YOUTUBE-CLONE{" "}
                 <p>
                   a replica of a Youtube channel page using SASS and vanilla JS
@@ -56,7 +76,11 @@ function Mywork() {
               </a>
             </li>
             <li>
-              <a href="https://angelospa.github.io/myPassword-Generator/">
+              <a
+                href="https://angelospa.github.io/myPassword-Generator/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 PASSWORD-GENERATOR{" "}
                 <p>
                   a simple app who can provide you with a single unique random
