@@ -13,7 +13,7 @@ function Touchlinks() {
           src="https://icongr.am/devicon/github-original.svg?size=128&color=currentColor"
           alt="githubico"
         />
-        My Github
+        Github
       </a>
 
       <a href="https://www.linkedin.com/in/angelos-p-707216214/">
@@ -23,7 +23,7 @@ function Touchlinks() {
               "
           alt="linkedinico"
         />
-        My Linkedin
+        Linkedin
       </a>
       <a href="https://www.xing.com/profile/Angelos_Papagiannopoulos2/cv">
         <img
@@ -38,7 +38,7 @@ function Touchlinks() {
       </a>
 
       <a href="mailto: mrpalaiologos@gmail.com">
-        <i>{message}</i> My Email
+        <i>{message}</i> Email
       </a>
     </div>
   );

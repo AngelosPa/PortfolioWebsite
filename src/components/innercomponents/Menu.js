@@ -10,7 +10,7 @@ const Menu = (props) => {
         to="/mywork"
         style={{ transform: `${mover}` }}
       >
-        <li>My Work</li>
+        <li>Portfolio</li>
       </Link>
       <Link
         className="text-link"

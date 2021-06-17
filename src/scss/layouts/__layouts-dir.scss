@@ -85,11 +85,33 @@
     }
   }
 }
+//for the technologie icons styling
+.technologies {
+  .main-treppebox {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    align-self: flex-start;
+    flex-direction: column;
+    flex-flow: wrap;
 
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    transform: rotate(-0deg);
+  }
+
+  a {
+    height: 10rem;
+    overflow: visible;
+  }
+}
 //for the my work component link
 .parent-div-for-technologies-and-menu {
   @include flexthing;
   flex-direction: column;
+
   flex-wrap: wrap;
 }
 nav {
@@ -124,7 +146,7 @@ nav {
       @include flexthing;
       @include forfonts;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
 
       width: 100%;
       font-size: 2rem;
@@ -138,7 +160,12 @@ nav {
       width: 90px;
       height: 90px;
     }
-
+    .i,
+    img:hover {
+      transition: transform 1s;
+      transform-style: preserve-3d;
+      transform: rotateY(360deg);
+    }
     .mail-icon {
       padding: 12px;
       border-radius: 100%;
@@ -164,6 +191,11 @@ footer {
 }
 //mobile
 @media only screen and (max-width: 500px) {
+  .main-treppebox {
+    img {
+      margin: -3rem;
+    }
+  }
   .getintouch-container {
     @include flexthing;
     flex-direction: column;
@@ -193,10 +225,13 @@ footer {
       height: auto;
     }
   }
-  img {
-    padding: 0px;
-    width: 30px;
-    height: 30px;
+  label {
+    display: block;
+  }
+  li {
+    textarea {
+      width: 90%;
+    }
   }
   h1 {
     text-align: center;

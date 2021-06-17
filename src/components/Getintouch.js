@@ -9,7 +9,7 @@ function Getintouch() {
           <ul>
             <li>
               <p className="left">
-                <label for="first_name">full name </label>
+                <label for="first_name">Name </label>
                 <input type="text" name="first_name" placeholder="your Name" />
               </p>
             </li>

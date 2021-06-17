@@ -18,28 +18,7 @@ p,
 span {
   color: white;
 }
-//for the technologie icons styling
-.technologies {
-  .main-treppebox {
-    display: flex;
-    justify-content: space-around;
-    align-items: left;
-    align-self: flex-start;
-    flex-direction: column;
-    flex-flow: wrap;
-    flex-wrap: nowrap;
-    img {
-      width: 70px;
-      height: 70px;
-    }
-    transform: rotate(-0deg);
-  }
 
-  a {
-    height: 10rem;
-    overflow: visible;
-  }
-}
 // style for the my work and keep in touch part
 nav {
   .text-link {
@@ -144,7 +123,6 @@ form {
     margin: 0 0 0.6em 0;
     color: $green;
     font-size: 2rem;
-    border: 2px red dashed;
   }
   input {
     margin: 0 0 1.3em 0;
@@ -155,7 +133,7 @@ form {
   textarea {
     border: 1px solid $grey;
     padding: 9px 15px;
-    width: 50%;
+    width: 100%;
     color: $dark_grey;
   }
   small {
