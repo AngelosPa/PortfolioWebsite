@@ -9,7 +9,7 @@ function Getintouch() {
           <ul>
             <li>
               <p className="left">
-                <label for="first_name">full name</label>
+                <label for="first_name">full name </label>
                 <input type="text" name="first_name" placeholder="your Name" />
               </p>
             </li>
@@ -26,14 +26,14 @@ function Getintouch() {
               <div className="divider"></div>
             </li>
             <li>
-              <label for="comments">message</label>
+              <label for="comments">message </label>
               <textarea cols="46" rows="3" name="comments"></textarea>
             </li>
 
             <li>
               <input className="btn btn-submit" type="submit" value="Submit" />
               <small>
-                or press <strong>enter</strong>
+                or press <strong>enter </strong>
               </small>
             </li>
           </ul>
