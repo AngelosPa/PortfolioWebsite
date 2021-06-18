@@ -27,7 +27,7 @@
   }
   //for the start loading part effect
   .loading {
-    font-size: 10vw;
+    font-size: 4vw;
     @include forfonts;
   }
   .backroundi {
@@ -143,6 +143,10 @@ nav {
   .box-for-menu {
     height: 100%;
     @include flexthing;
+    flex-direction: column;
+    p {
+      padding: 1rem;
+    }
   }
   .portfolio {
     display: flex;

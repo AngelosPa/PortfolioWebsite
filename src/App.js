@@ -6,7 +6,7 @@ import Aboutme from "./components/Aboutme";
 import Mywork from "./components/Mywork";
 import Getintouch from "./components/Getintouch";
 
-import Stars from "./components/Stars";
+import Loadingpart from "./components/Loadingpart";
 import "./scss/Main.scss";
 
 function App() {
@@ -20,10 +20,11 @@ function App() {
   if (loading)
     return (
       <Router>
-        <Route path="/">
+        <Route path="/PortfolioWebsite">
           <div className="body-container">
             <p className="loading">Loading...</p>
-            <Stars />
+
+            <Loadingpart />
           </div>
         </Route>
       </Router>
@@ -31,11 +32,21 @@ function App() {
   return (
     <Router>
       <div className="body-container">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
         {/* you will need it for the pics */}
         {/* <img src={`${process.env.PUBLIC_URL}/${data[0].img}`} alt="Sushi" /> */}
-        <h1>Welcome to the official website of Angelo</h1>{" "}
+        <h1>Welcome to the official website of Angelo</h1>
+
         <Switch>
-          <Route path="/" exact>
+          <Route path="/PortfolioWebsite" exact>
+            <div class="bigcicle">
+              <div class="innercycle"></div>
+              <div class="innercycle"></div>
+              <div class="innercycle"></div>
+              <div class="innercycle"></div>
+            </div>
+
             <Aboutme />
           </Route>
           <Route path="/mywork" exact>

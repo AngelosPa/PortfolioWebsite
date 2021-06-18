@@ -1,5 +1,5 @@
 import "../scss/Main.scss";
-function Stars() {
+function Loadingpart() {
   return (
     <div className="backroundi">
       <div className="stars-container">
@@ -19,4 +19,4 @@ function Stars() {
   );
 }
 
-export default Stars;
+export default Loadingpart;

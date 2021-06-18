@@ -150,3 +150,102 @@ form {
     margin: 0 0 0 0.5em;
   }
 }
+
+//for the hole effect
+:root {
+  --duration: 12000;
+  --initial-rotation: 10;
+  --animation-delay: 10;
+  --color-light: #1b612771;
+  --color-glow: rgba(45, 153, 26, 0.294);
+}
+
+.bigcicle {
+  width: 20vw;
+  height: 20vw;
+  position: relative;
+}
+
+.innercycle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 100%;
+  animation: rotate infinite calc(var(--duration) * 1ms) linear;
+  animation-delay: var(--animation-delay);
+  opacity: 0;
+  box-shadow: 0 0 0 0.25vw rgba(0, 0, 0, 0.5),
+    inset 4vw 4vw 4vw var(--color-light), -2.5vw -2.5vw 5vw var(--color-glow);
+
+  &:nth-child(2) {
+    // --initial-rotation: 90;
+    --animation-delay: calc((var(--duration) * 0.25) * 1ms);
+  }
+
+  &:nth-child(3) {
+    // --initial-rotation: 180;
+    --animation-delay: calc((var(--duration) * 0.5) * 1ms);
+  }
+
+  &:nth-child(4) {
+    // --initial-rotation: 270;
+    --animation-delay: calc((var(--duration) * 0.75) * 1ms);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1) rotate(calc(var(--initial-rotation) * 1deg));
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(0)
+      rotate(calc((var(--initial-rotation) + calc(360 * 6)) * 1deg));
+    box-shadow: 0 0 0 0.25vw rgba(0, 0, 0, 0.5), inset 4vw 4vw 4vw var(red),
+      -2.5vw -2.5vw 5vw var(--color-glow);
+  }
+}
+
+//for the stars
+.stars,
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: black url(../abstracts/img/startrans.png) repeat top center;
+
+  z-index: -1;
+}
+
+.twinkling {
+  background: url(../abstracts/img/twinkling.png) repeat top center;
+
+  z-index: -1;
+
+  animation: moveit 500s linear infinite;
+}
+
+@keyframes moveit {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -1000rem;
+  }
+}

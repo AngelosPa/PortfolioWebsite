@@ -1,5 +1,5 @@
 import Touchlinks from "./innercomponents/Touchlinks";
-
+import { Link } from "react-router-dom";
 function Getintouch() {
   return (
     <div className="getintouch-container">
