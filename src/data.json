@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "TO-DO-LIST(React)",
+    "link": "https://angelospa.github.io/toDoList-ReactVersion/",
+    "description": "simple to do list application using react",
+
+    "img": "todoapp.png"
+  },
+  {
+    "id": 2,
+    "title": "FIND-THE-FLAG",
+    "link": "https://angelospa.github.io/find-the-flag/",
+    "description": "sa React application that shows information about countries made by using API's with axios",
+
+    "img": "findtheflag.png"
+  },
+  {
+    "id": 3,
+    "title": "INSTAGRAM-PAGE-CLONE",
+    "link": "https://angelospa.github.io/Instagram-Profilepageclone/",
+    "description": " a Replica of an Instagram profile Page made by using pictures from unsplash and React",
+
+    "img": "insta2.png"
+  },
+  {
+    "id": 4,
+    "title": "TO-DO-LIST(DOM)",
+    "link": "https://angelospa.github.io/TheRealToDoList/",
+    "description": "a to-do-list application using js DOM manipulators",
+
+    "img": "todolist.png"
+  },
+  {
+    "id": 5,
+    "title": "YOUTUBE-CLONE",
+    "link": "https://angelospa.github.io/youTube-clone/",
+    "description": "a replica of a Youtube channel page using SASS and vanilla JS. A day/night mode menu is also implemented",
+
+    "img": "youtube.png"
+  },
+  {
+    "id": 6,
+    "title": "PASSWORD-GENERATOR",
+    "link": "https://angelospa.github.io/myPassword-Generator/",
+    "description": "an app who can provide you with a single unique random password",
+
+    "img": "todoapp.png"
+  },
+  {
+    "id": 7,
+    "title": "TO-DO-LIST(React)",
+    "link": "https://angelospa.github.io/toDoList-ReactVersion/",
+    "description": "simple to do list application using react",
+
+    "img": "todoapp.png"
+  },
+  {
+    "id": 8,
+    "title": "TO-DO-LIST(React)",
+    "link": "https://angelospa.github.io/toDoList-ReactVersion/",
+    "description": "simple to do list application using react",
+
+    "img": "todoapp.png"
+  },
+  {
+    "id": 9,
+    "title": "TO-DO-LIST(React)",
+    "link": "https://angelospa.github.io/toDoList-ReactVersion/",
+    "description": "simple to do list application using react",
+
+    "img": "todoapp.png"
+  }
+]

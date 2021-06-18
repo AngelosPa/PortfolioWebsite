@@ -156,10 +156,36 @@ nav {
       height: 27%;
       font-size: 29px;
 
+      position: relative;
+
+      a {
+        img {
+          position: absolute;
+          left: -0.1%;
+          width: 100%;
+          height: 100%;
+          opacity: 0.1%;
+          //
+        }
+        p,
+        h5 {
+          @include flexthing;
+          flex-direction: column;
+          width: 100%;
+          height: 50%;
+        }
+      }
+
       @include frame_for_list_items;
     }
   }
+
+  .enlighter:hover {
+    opacity: 100%;
+    transition: 1s;
+  }
 }
+
 //for get in touch container
 .getintouch-container {
   @include flexthing;
@@ -307,6 +333,15 @@ footer {
     li {
       font-size: 15px;
       padding: 1.2rem;
+    }
+  }
+
+  li {
+    a {
+      p {
+        font-size: 0.01px;
+        //display:none doesnt work :@
+      }
     }
   }
 }

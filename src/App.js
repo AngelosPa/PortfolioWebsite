@@ -20,7 +20,7 @@ function App() {
   if (loading)
     return (
       <Router>
-        <Route path="/PortfolioWebsite">
+        <Route path="/">
           <div className="body-container">
             <p className="loading">Loading...</p>
             <Stars />
@@ -35,7 +35,7 @@ function App() {
         {/* <img src={`${process.env.PUBLIC_URL}/${data[0].img}`} alt="Sushi" /> */}
         <h1>Welcome to the official website of Angelo</h1>{" "}
         <Switch>
-          <Route path="/PortfolioWebsite" exact>
+          <Route path="/" exact>
             <Aboutme />
           </Route>
           <Route path="/mywork" exact>
