@@ -5,6 +5,8 @@ function Getintouch() {
     <div className="getintouch-container">
       <Touchlinks />
       <div className="form-container">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
         <form action="#">
           <ul>
             <li>

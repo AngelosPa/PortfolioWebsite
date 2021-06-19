@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 //Browserrouter aka Router to wrap everything
 //switch to looks through its children <Route>s and renders the first one that matches the current URL. ad lets go
 import Aboutme from "./components/Aboutme";
@@ -16,11 +16,16 @@ function App() {
       setLoading(false);
     }, 2000);
   }, []);
-
+  // https://codeburst.io/4-four-ways-to-style-react-components-ac6f323da822
+  //
+  //https://icongr.am/simple
+  const displaystyle = {
+    display: `none`,
+  };
   if (loading)
     return (
       <Router>
-        <Route path="/PortfolioWebsite">
+        <Route path="/">
           <div className="body-container">
             <p className="loading">Loading...</p>
 
@@ -31,22 +36,20 @@ function App() {
     );
   return (
     <Router>
+      <Link className="text-link" to="/aboutme">
+        <div className="body-container">
+          <h1>Welcome to the official website of Angelo</h1>
+          <div class="bigcicle" style={displaystyle}>
+            <div class="innercycle"></div>
+            <div class="innercycle"></div>
+            <div class="innercycle"></div>
+            <div class="innercycle"></div>
+          </div>
+        </div>
+      </Link>
       <div className="body-container">
-        <div class="stars"></div>
-        <div class="twinkling"></div>
-        {/* you will need it for the pics */}
-        {/* <img src={`${process.env.PUBLIC_URL}/${data[0].img}`} alt="Sushi" /> */}
-        <h1>Welcome to the official website of Angelo</h1>
-
         <Switch>
-          <Route path="/PortfolioWebsite" exact>
-            <div class="bigcicle">
-              <div class="innercycle"></div>
-              <div class="innercycle"></div>
-              <div class="innercycle"></div>
-              <div class="innercycle"></div>
-            </div>
-
+          <Route path="/aboutme" exact>
             <Aboutme />
           </Route>
           <Route path="/mywork" exact>
