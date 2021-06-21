@@ -19,7 +19,7 @@ function App() {
   // https://codeburst.io/4-four-ways-to-style-react-components-ac6f323da822
   //
   //https://icongr.am/simple
-  const displaystyle = {
+  const divSstyle = {
     display: `none`,
   };
   if (loading)
@@ -39,7 +39,7 @@ function App() {
       <Link className="text-link" to="/aboutme">
         <div className="body-container">
           <h1>Welcome to the official website of Angelo</h1>
-          <div class="bigcicle" style={displaystyle}>
+          <div class="bigcicle" style={divSstyle}>
             <div class="innercycle"></div>
             <div class="innercycle"></div>
             <div class="innercycle"></div>
