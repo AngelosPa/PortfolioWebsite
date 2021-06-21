@@ -11,6 +11,8 @@ import "./scss/Main.scss";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const footerdisplayer = useRef(null);
+  const turnoff = useRef(null);
   const vergrosser = useRef(null);
   useEffect(() => {
     setTimeout(() => {
@@ -21,10 +23,12 @@ function App() {
   function Enterthevoid() {
     vergrosser.current.style.transform = "scale(11)";
     vergrosser.current.style.transition = "2.1s";
+    turnoff.current.style.display = "none";
     setTimeout(() => {
       vergrosser.current.style.transform = "scale(0.01)";
       vergrosser.current.style.transition = "0.2s";
       vergrosser.current.style.height = "10px";
+      footerdisplayer.current.style.display = "flex";
     }, 2000);
   }
 
@@ -45,6 +49,10 @@ function App() {
       <Link className="text-link" to="/aboutme">
         <div className="body-container">
           <h1>Welcome to the official website of Angelo</h1>
+          <p className="guild" ref={turnoff}>
+            {" "}
+            enter the sphere and scroll
+          </p>
           <div
             class="bigcicle"
             //style={divSstyle}
@@ -73,7 +81,7 @@ function App() {
             wrong way..
           </Route>
         </Switch>
-        <footer>
+        <footer ref={footerdisplayer}>
           <h5>Made with ❤️ By Angelo&nbsp;</h5>
           <h6>All copyrights reserved ® {new Date().getFullYear()}</h6>
         </footer>

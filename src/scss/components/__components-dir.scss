@@ -19,6 +19,9 @@ span {
   color: $white;
 }
 
+.guild {
+  font-size: 14px;
+}
 /* here is the green planet menu */
 .angelov2-menu {
   margin-top: 2rem;
@@ -133,7 +136,7 @@ form {
   }
 }
 
-//for the green hole effect
+//for the green black hole effect
 
 .bigcicle {
   width: 13vw;
@@ -167,25 +170,6 @@ form {
   }
 }
 
-@keyframes rotate {
-  0% {
-    transform: scale(1) rotate(calc(var(--initial-rotation) * 1deg));
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(0)
-      rotate(calc((var(--initial-rotation) + calc(360 * 6)) * 1deg));
-    box-shadow: 0 0 0 0.25vw rgba(0, 0, 0, 0.5), inset 4vw 4vw 4vw var(red),
-      -2.5vw -2.5vw 5vw var(--color-glow);
-  }
-}
-
 //for the stars in the contact
 .stars,
 .twinkling {
@@ -211,13 +195,4 @@ form {
   z-index: -1;
 
   animation: moveit 500s linear infinite;
-}
-
-@keyframes moveit {
-  from {
-    background-position: 0;
-  }
-  to {
-    background-position: -1000rem;
-  }
 }

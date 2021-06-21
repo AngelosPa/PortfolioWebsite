@@ -47,10 +47,40 @@
     transform: rotate(360deg);
   }
 }
+// for the intro blackhole
+@keyframes rotate {
+  0% {
+    transform: scale(1) rotate(calc(var(--initial-rotation) * 1deg));
+    opacity: 0;
+  }
 
-//to rotate the planet menu
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(0)
+      rotate(calc((var(--initial-rotation) + calc(360 * 6)) * 1deg));
+    box-shadow: 0 0 0 0.25vw rgba(0, 0, 0, 0.5),
+      inset 4vw 4vw 4vw var(rgb(0, 255, 42)),
+      -2.5vw -2.5vw 5vw var(--color-glow);
+  }
+}
+
+//to rotate the minimal planet menu
 @keyframes rotateit {
   to {
     transform: rotate(360deg);
+  }
+}
+
+//for the star sky background
+@keyframes moveit {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -1000rem;
   }
 }

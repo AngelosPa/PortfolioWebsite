@@ -1,13 +1,18 @@
 import Touchlinks from "./innercomponents/Touchlinks";
 import { Link } from "react-router-dom";
 function Getintouch() {
+  function Handle(e) {
+    e.preventDefault();
+    e.target.reset();
+  }
+
   return (
     <div className="getintouch-container">
       <Touchlinks />
       <div className="form-container">
         <div class="stars"></div>
         <div class="twinkling"></div>
-        <form action="#">
+        <form onSubmit={Handle}>
           <ul>
             <li>
               <p className="left">
@@ -33,7 +38,12 @@ function Getintouch() {
             </li>
 
             <li>
-              <input className="btn btn-submit" type="submit" value="Submit" />
+              <input
+                //ref="input"
+                className="btn btn-submit"
+                type="submit"
+                value="Submit"
+              />
               <small>
                 or press <strong>enter </strong>
               </small>
