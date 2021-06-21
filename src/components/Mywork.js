@@ -22,7 +22,7 @@ function Mywork() {
               <a href={linki[0]} target="_blank" rel="noreferrer">
                 <img
                   className="enlighter"
-                  src={`${process.env.PUBLIC_URL}./img/${imgi[0]}`}
+                  src={`${process.env.PUBLIC_URL}/img/${imgi[0]}`}
                   alt={`pic of ${titlei[0]}`}
                 ></img>
                 <h5>{titlei[0]}</h5>
@@ -33,7 +33,7 @@ function Mywork() {
               <a href={linki[1]} target="_blank" rel="noreferrer">
                 <img
                   className="enlighter"
-                  src={`${process.env.PUBLIC_URL}./img/${imgi[1]}`}
+                  src={`${process.env.PUBLIC_URL}/img/${imgi[1]}`}
                   alt={`pic of ${titlei[1]}`}
                 ></img>
                 <h5>{titlei[1]}</h5>
@@ -44,7 +44,7 @@ function Mywork() {
               <a href={linki[2]} target="_blank" rel="noreferrer">
                 <img
                   className="enlighter"
-                  src={`${process.env.PUBLIC_URL}./img/${imgi[2]}`}
+                  src={`${process.env.PUBLIC_URL}/img/${imgi[2]}`}
                   alt={`pic of ${titlei[2]}`}
                 ></img>
                 <h5>{titlei[2]}</h5>
@@ -70,7 +70,7 @@ function Mywork() {
               <a href={linki[3]} target="_blank" rel="noreferrer">
                 <img
                   className="enlighter"
-                  src={`${process.env.PUBLIC_URL}./img/${imgi[3]}`}
+                  src={`${process.env.PUBLIC_URL}/img/${imgi[3]}`}
                   alt={`pic of ${titlei[3]}`}
                 ></img>
                 <h5>{titlei[3]}</h5>
@@ -81,7 +81,7 @@ function Mywork() {
               <a href={linki[4]} target="_blank" rel="noreferrer">
                 <img
                   className="enlighter"
-                  src={`${process.env.PUBLIC_URL}./img/${imgi[4]}`}
+                  src={`${process.env.PUBLIC_URL}/img/${imgi[4]}`}
                   alt={`pic of ${titlei[4]}`}
                 ></img>
                 <h5>{titlei[4]}</h5>
@@ -92,7 +92,7 @@ function Mywork() {
               <a href={linki[5]} target="_blank" rel="noreferrer">
                 <img
                   className="enlighter"
-                  src={`${process.env.PUBLIC_URL}./img/${imgi[5]}`}
+                  src={`${process.env.PUBLIC_URL}/img/${imgi[5]}`}
                   alt={`pic of ${titlei[5]}`}
                 ></img>
                 <h5>{titlei[5]}</h5>
