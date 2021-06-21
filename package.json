@@ -1,7 +1,7 @@
 {
   "name": "portfolio-website",
   "version": "0.1.0",
-  "_homepage": "http://AngelosPa.github.io/PortfolioWebsite",
+  "homepage": "http://AngelosPa.github.io/PortfolioWebsite",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",

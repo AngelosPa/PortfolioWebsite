@@ -6,8 +6,15 @@
 
 // others
 // Color vars for the form
-$white: #fff;
-$grey: #ccc;
+$white: white;
+//$grey: #ccc;
 $dark_grey: #555;
 $green: #57be4e;
 $duration: 1s;
+:root {
+  --duration: 9000;
+  --initial-rotation: 90;
+  --animation-delay: 10;
+  --color-light: #1b612771;
+  --color-glow: rgba(59, 158, 41, 0.226);
+}

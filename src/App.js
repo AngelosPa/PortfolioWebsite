@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 //Browserrouter aka Router to wrap everything
 //switch to looks through its children <Route>s and renders the first one that matches the current URL. ad lets go
@@ -11,17 +11,23 @@ import "./scss/Main.scss";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const vergrosser = useRef(null);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1300);
   }, []);
-  // https://codeburst.io/4-four-ways-to-style-react-components-ac6f323da822
-  //
-  //https://icongr.am/simple
-  const divSstyle = {
-    display: `none`,
-  };
+
+  function Enterthevoid() {
+    vergrosser.current.style.transform = "scale(11)";
+    vergrosser.current.style.transition = "2.1s";
+    setTimeout(() => {
+      vergrosser.current.style.transform = "scale(0.01)";
+      vergrosser.current.style.transition = "0.2s";
+      vergrosser.current.style.height = "10px";
+    }, 2000);
+  }
+
   if (loading)
     return (
       <Router>
@@ -39,7 +45,12 @@ function App() {
       <Link className="text-link" to="/aboutme">
         <div className="body-container">
           <h1>Welcome to the official website of Angelo</h1>
-          <div class="bigcicle" style={divSstyle}>
+          <div
+            class="bigcicle"
+            //style={divSstyle}
+            onClick={Enterthevoid}
+            ref={vergrosser}
+          >
             <div class="innercycle"></div>
             <div class="innercycle"></div>
             <div class="innercycle"></div>

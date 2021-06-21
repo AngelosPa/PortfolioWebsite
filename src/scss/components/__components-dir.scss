@@ -16,27 +16,9 @@ h6,
 a,
 p,
 span {
-  color: white;
+  color: $white;
 }
 
-// style for the my work and keep in touch part
-.parent-div-for-technologies-and-menu {
-  nav {
-    .text-link {
-      color: inherit;
-      text-decoration: inherit;
-      color: white;
-    }
-
-    li {
-      font-size: 30px;
-
-      padding: 1.2rem;
-      //border-radius: 100%;
-      @include frame_for_list_items;
-    }
-  }
-}
 /* here is the green planet menu */
 .angelov2-menu {
   margin-top: 2rem;
@@ -73,7 +55,7 @@ span {
   width: 0.6rem;
   height: 0.6rem;
   background-color: rgb(0, 0, 0);
-  box-shadow: 0px 0px 8px 2px rgb(255, 255, 255);
+  box-shadow: 0px 0px 8px 2px $white;
   border-radius: 100%;
 }
 
@@ -135,12 +117,12 @@ form {
   }
   input {
     margin: 0 0 1.3em 0;
-    border: 1px solid $grey;
+    border: 1px solid #ccc;
     padding: 9px 15px;
     color: $dark_grey;
   }
   textarea {
-    border: 1px solid $grey;
+    border: 1px solid #ccc;
     padding: 9px 15px;
     width: 100%;
     color: $dark_grey;
@@ -151,17 +133,10 @@ form {
   }
 }
 
-//for the hole effect
-:root {
-  --duration: 12000;
-  --initial-rotation: 10;
-  --animation-delay: 10;
-  --color-light: #1b612771;
-  --color-glow: rgba(45, 153, 26, 0.294);
-}
+//for the green hole effect
 
 .bigcicle {
-  width: 20vw;
+  width: 13vw;
   height: 20vw;
   position: relative;
 }
@@ -180,18 +155,15 @@ form {
     inset 4vw 4vw 4vw var(--color-light), -2.5vw -2.5vw 5vw var(--color-glow);
 
   &:nth-child(2) {
-    // --initial-rotation: 90;
     --animation-delay: calc((var(--duration) * 0.25) * 1ms);
   }
 
   &:nth-child(3) {
-    // --initial-rotation: 180;
-    --animation-delay: calc((var(--duration) * 0.5) * 1ms);
+    --animation-delay: calc((var(--duration) * 2.5) * 1ms);
   }
 
   &:nth-child(4) {
-    // --initial-rotation: 270;
-    --animation-delay: calc((var(--duration) * 0.75) * 1ms);
+    --animation-delay: calc((var(--duration) * 0.05) * 1ms);
   }
 }
 
@@ -214,7 +186,7 @@ form {
   }
 }
 
-//for the stars
+//for the stars in the contact
 .stars,
 .twinkling {
   position: absolute;

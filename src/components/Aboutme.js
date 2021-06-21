@@ -3,9 +3,6 @@ import Menu from "./innercomponents/Menu";
 import Techno from "./innercomponents/Techno";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import React, { useState, useEffect } from "react";
-import userEvent from "@testing-library/user-event";
-// ..
-AOS.init();
 
 function Aboutme() {
   //usetate to understand how much the user scrolled
@@ -13,8 +10,8 @@ function Aboutme() {
   const [scroller, setScroller] = useState(0);
   //window.pageYOffset returns the number of pixels the document is currently scrolled along the vertical(y) axis
   const handleScroll = () => {
-    console.log(window.pageYOffset);
-    console.log(window.innerHeight);
+    // console.log(window.pageYOffset);
+    // console.log(window.innerHeight);
     //to stop scrolling
     if (window.pageYOffset <= 440) {
       setScroller(window.pageYOffset);
@@ -33,10 +30,7 @@ function Aboutme() {
     }
   }, [window.pageYOffset]);
   //console.log(scroller);
-  //we initialise Aos by using our useEffect hook
-  useEffect(() => {
-    AOS.init({});
-  }, []);
+
   return (
     <div
       className="about-me"
