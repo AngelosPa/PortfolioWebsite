@@ -12,7 +12,11 @@ function Getintouch() {
       <div className="form-container">
         <div class="stars"></div>
         <div class="twinkling"></div>
-        <form onSubmit={Handle}>
+        <form
+          action="https://formsubmit.co/mrpalaiologos@gmail.com"
+          method="POST"
+          onSubmit={Handle}
+        >
           <ul>
             <li>
               <p className="left">

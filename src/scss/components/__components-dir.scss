@@ -18,9 +18,16 @@ p,
 span {
   color: $white;
 }
-
+h5,
+h6,
+a,
+p,
+span {
+  letter-spacing: 2px;
+  font-weight: bold;
+}
 .guild {
-  font-size: 14px;
+  font-size: 19px;
 }
 /* here is the green planet menu */
 .angelov2-menu {
