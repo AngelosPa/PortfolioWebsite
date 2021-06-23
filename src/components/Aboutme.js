@@ -39,13 +39,13 @@ function Aboutme() {
     >
       <div>
         <p>
-          Angelo is an aspiring newcomer developer currently based in Leipzig,
-          Germany. He entered in 2019 into the world of web engineering as a
-          student of the DCI (Digital Career Institute). After some years of
-          traveling across Europe and collecting experiences he discovered his
-          passion for programming, creating UI effects, animations and
-          developing unique, dynamic user experiences as well digital drawing
-          and 3d effects.
+          Angelos is an aspiring newcomer in web development, who is currently
+          based in Leipzig, Germany. He first entered the world of web
+          engineering in 2019 as a student at the DCI (Digital Career
+          Institute). After years of traveling across Europe and gaining
+          experience he discovered his passion for programming, creating UI
+          effects, animations and developing unique, dynamic user experiences as
+          well as creating digital drawings and 3D effects.
         </p>
       </div>
       {/*  style={{ transform: `translateY(-${scroller * 0.5}px)` }} */}
