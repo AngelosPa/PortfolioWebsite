@@ -15,7 +15,7 @@ This is my official portfolio Website that i created using React.
     <br />
     <a href="https://github.com/AngelosPa/PortfolioWebsite/tree/main/src"><strong>Explore the files »</strong></a>
     <br />
-    <br />
+    
     <a href="https://angelospa.github.io/PortfolioWebsite/">View Demo</a>
     ·
   
