@@ -4,7 +4,7 @@
 
 
 <p  align="center">
- <img src="./sassloops.png" alt="Logo" width="396" height="296">
+
   <p align="center">
   <strong> PORTFOLIO </strong>
 This is my official portfolio Website that i created using React.
