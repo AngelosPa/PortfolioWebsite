@@ -5,24 +5,21 @@ https://angelospa.github.io/PortfolioWebsite/
 
 
 
-<p>
 <p  align="center">
 
   <p align="center">
-  <strong> PORTFOLIO </strong>
-This is my official portfolio Website that i created using React.
-    examples of <strong>useState useEffect and useRef </strong> :
-![here](https://github.com/AngelosPa/PortfolioWebsite/blob/main/src/App.js)
-    
+  <strong> planets with SASS </strong>
+an example of using loops and functions in SASS in hand with animations
     <br />
-    <a href="https://github.com/AngelosPa/PortfolioWebsite/tree/main/src"><strong>Explore the files »</strong></a>
+    <a href="https://github.com/AngelosPa/loops_with_sass/tree/main/src/scss"><strong>Explore the files »</strong></a>
     <br />
     <br />
-    <a href="https://angelospa.github.io/PortfolioWebsite/">View Demo</a>
+    <a href="https://angelospa.github.io/planets_with_sass/">View Demo</a>
     ·
     <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
     ·
     <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
   </p>
 </p>
+
 ![check here](portfoliowebsite.png)
