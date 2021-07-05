@@ -8,7 +8,7 @@
 <p  align="center">
 
   <p align="center">
-  <strong> planets with SASS </strong>
+  <strong> thfju </strong>
 This is my official portfolio Website that i created using React.
 
 
