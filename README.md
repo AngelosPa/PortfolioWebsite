@@ -2,7 +2,7 @@
 <p  align="center">
 
   <p align="center">
-  <strong> planets with SASS </strong>
+  <strong> pORTFOLIO</strong>
 This is my official portfolio Website that i created using React.
  :
 <!-- ![here](https://github.com/AngelosPa/PortfolioWebsite/blob/main/src/App.js) -->
