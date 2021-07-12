@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 //Browserrouter aka Router to wrap everything
 //switch to looks through its children <Route>s and renders the first one that matches the current URL. ad lets go
 
+
+
 import Aboutme from "./components/Aboutme";
 import Mywork from "./components/Mywork";
 import Getintouch from "./components/Getintouch";
@@ -36,7 +38,7 @@ function App() {
   if (loading)
     return (
       <Router>
-        <Route path="/the-t-clone">
+        <Route path="/">
           <div className="body-container">
             <p className="loading">Loading...</p>
 
