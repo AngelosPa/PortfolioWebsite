@@ -191,8 +191,8 @@ nav {
       a:hover {
         .enlighter {
           display: block;
-          transition: 1s;
         }
+        transition: 1s;
       }
       @include frame_for_list_items;
     }
