@@ -1,7 +1,7 @@
 {
   "name": "portfolio-website",
   "version": "0.1.0",
-  "homepage": "portfolio-website-taupe-mu.vercel.app",
+  "homepage": "https://portfolio-website-568ktign5-angelospa.vercel.app/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
