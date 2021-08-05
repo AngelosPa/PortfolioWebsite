@@ -1,7 +1,7 @@
 {
   "name": "portfolio-website",
   "version": "0.1.0",
-  "homepage": "http://AngelosPa.github.io/PortfolioWebsite",
+  "homepage": "portfolio-website-taupe-mu.vercel.app",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
