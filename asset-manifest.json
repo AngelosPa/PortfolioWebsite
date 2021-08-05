@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio-website-taupe-mu.vercel.app/static/css/main.c08cc4fd.chunk.css",
-    "main.js": "/portfolio-website-taupe-mu.vercel.app/static/js/main.74665661.chunk.js",
-    "main.js.map": "/portfolio-website-taupe-mu.vercel.app/static/js/main.74665661.chunk.js.map",
-    "runtime-main.js": "/portfolio-website-taupe-mu.vercel.app/static/js/runtime-main.dcfb7156.js",
-    "runtime-main.js.map": "/portfolio-website-taupe-mu.vercel.app/static/js/runtime-main.dcfb7156.js.map",
-    "static/css/2.ae9e5f60.chunk.css": "/portfolio-website-taupe-mu.vercel.app/static/css/2.ae9e5f60.chunk.css",
-    "static/js/2.542e617e.chunk.js": "/portfolio-website-taupe-mu.vercel.app/static/js/2.542e617e.chunk.js",
-    "static/js/2.542e617e.chunk.js.map": "/portfolio-website-taupe-mu.vercel.app/static/js/2.542e617e.chunk.js.map",
-    "index.html": "/portfolio-website-taupe-mu.vercel.app/index.html",
-    "static/css/2.ae9e5f60.chunk.css.map": "/portfolio-website-taupe-mu.vercel.app/static/css/2.ae9e5f60.chunk.css.map",
-    "static/css/main.c08cc4fd.chunk.css.map": "/portfolio-website-taupe-mu.vercel.app/static/css/main.c08cc4fd.chunk.css.map",
-    "static/js/2.542e617e.chunk.js.LICENSE.txt": "/portfolio-website-taupe-mu.vercel.app/static/js/2.542e617e.chunk.js.LICENSE.txt",
-    "static/media/Main.scss": "/portfolio-website-taupe-mu.vercel.app/static/media/startrans.90c266f7.png"
+    "main.css": "/static/css/main.83da2d43.chunk.css",
+    "main.js": "/static/js/main.15d17571.chunk.js",
+    "main.js.map": "/static/js/main.15d17571.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2bf3b150.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2bf3b150.js.map",
+    "static/css/2.ae9e5f60.chunk.css": "/static/css/2.ae9e5f60.chunk.css",
+    "static/js/2.542e617e.chunk.js": "/static/js/2.542e617e.chunk.js",
+    "static/js/2.542e617e.chunk.js.map": "/static/js/2.542e617e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.ae9e5f60.chunk.css.map": "/static/css/2.ae9e5f60.chunk.css.map",
+    "static/css/main.83da2d43.chunk.css.map": "/static/css/main.83da2d43.chunk.css.map",
+    "static/js/2.542e617e.chunk.js.LICENSE.txt": "/static/js/2.542e617e.chunk.js.LICENSE.txt",
+    "static/media/Main.scss": "/static/media/startrans.90c266f7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.dcfb7156.js",
+    "static/js/runtime-main.2bf3b150.js",
     "static/css/2.ae9e5f60.chunk.css",
     "static/js/2.542e617e.chunk.js",
-    "static/css/main.c08cc4fd.chunk.css",
-    "static/js/main.74665661.chunk.js"
+    "static/css/main.83da2d43.chunk.css",
+    "static/js/main.15d17571.chunk.js"
   ]
 }
