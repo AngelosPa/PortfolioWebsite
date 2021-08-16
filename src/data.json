@@ -21,7 +21,7 @@
     "link": "https://angelospa.github.io/Instagram-Profilepageclone/",
     "description": " a Replica of an Instagram profile Page made by using pictures from unsplash and React",
 
-    "img": "insta2.png"
+    "img": "insta.png"
   },
   {
     "id": 4,
@@ -33,12 +33,13 @@
   },
   {
     "id": 5,
-    "title": "YOUTUBE-CLONE",
-    "link": "https://angelospa.github.io/youTube-clone/",
-    "description": "a replica of a Youtube channel page using SASS and vanilla JS. A day/night mode menu is also implemented",
+    "title": "  The-T-Clone",
+    "link": "https://the-t-clone-the-real-angelospa.vercel.app/",
+    "description": "that's a replica of the Tinder-Application (only Front-End part)",
 
-    "img": "youtube.png"
+    "img": "tinder.png"
   },
+
   {
     "id": 6,
     "title": "PASSWORD-GENERATOR",
@@ -70,5 +71,22 @@
     "description": "simple to do list application using react",
 
     "img": "todoapp.png"
+  },
+
+  {
+    "id": 10,
+    "title": "iconic-store-redux",
+    "link": "https://angelospa.github.io/iconic-store-redux/",
+    "description": "I created this imaginary mini e-commerce website as an example of Redux state container",
+
+    "img": "iconic-store.png"
+  },
+  {
+    "id": 11,
+    "title": "YOUTUBE-CLONE",
+    "link": "https://angelospa.github.io/youTube-clone/",
+    "description": "a replica of a Youtube channel page using SASS and vanilla JS. A day/night mode menu is also implemented",
+
+    "img": "youtube.png"
   }
 ]

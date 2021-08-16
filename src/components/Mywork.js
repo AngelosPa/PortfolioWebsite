@@ -21,10 +21,10 @@ function Mywork() {
                       <img
                         className="enlighter"
                         // src={`${process.env.PUBLIC_URL}/img/${el.img}`}
-                        scr ={`./img/${el.img}`}
+                        scr={`${process.env.PUBLIC_URL}/img/${el.img}`}
                         alt={`pic of ${el.title}`}
                       ></img>
-                      <h5>{el.title}€</h5>
+                      <h5>{el.title}</h5>
                       <p>{el.description}</p>
                     </a>
                   </li>
@@ -51,11 +51,12 @@ function Mywork() {
                   <li key={el.id}>
                     <a href={el.link} target="_blank" rel="noreferrer">
                       <img
+                        // style={{ width: "100px" }}
                         className="enlighter"
                         src={`${process.env.PUBLIC_URL}/img/${el.img}`}
                         alt={`pic of ${el.title}`}
                       ></img>
-                      <h5>{el.title}€</h5>
+                      <h5>{el.title}</h5>
                       <p>{el.description}</p>
                     </a>
                   </li>
