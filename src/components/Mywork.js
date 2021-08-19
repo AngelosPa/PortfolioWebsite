@@ -20,8 +20,7 @@ function Mywork() {
                     <a href={el.link} target="_blank" rel="noreferrer">
                       <img
                         className="enlighter"
-                        // src={`${process.env.PUBLIC_URL}/img/${el.img}`}
-                        scr={`${process.env.PUBLIC_URL}/img/${el.img}`}
+                        src={`${process.env.PUBLIC_URL}/img/${el.img}`}
                         alt={`pic of ${el.title}`}
                       ></img>
                       <h5>{el.title}</h5>

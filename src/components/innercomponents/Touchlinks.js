@@ -17,7 +17,7 @@ function Touchlinks() {
       </a>
 
       <a
-        href="https://www.linkedin.com/in/angelos-p-707216214/"
+        href="https://www.linkedin.com/in/angelos-papagiannopoulos-707216214/"
         target="_blank"
       >
         <img
